@@ -1,0 +1,755 @@
+/* miejsce na font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+@font-face { font-family: SuperMario256; src: url('SuperMario256.ttf'); } 
+@font-face { font-family: ARCADE_R; src: url('ARCADE_R.ttf'); }
+@font-face { font-family: ARCADE_N; src: url('ARCADE_N.ttf'); }
+
+/* start css */
+html {
+  min-height: 100%;
+  min-width: 100%;
+  background-image: url('https://wallpapercave.com/dwp1x/MUW4Dh6.jpg');
+  
+}
+body {
+  background: rgb(2,0,36);
+  background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,14,117,1) 0%, rgba(153,10,82,0.5882002459186799) 0%, rgba(0,0,0,0.5853991254705007) 100%);
+  
+}
+.gamepad {
+  width: 340px; /* Adjust the width as needed */
+  height: auto;
+  position:absolute; 
+  top: -16px; 
+  left:36px; 
+}
+.navbar {
+  position:fixed;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%; /* Full width */
+  margin-top:-21px;
+
+  
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  margin-left:200px;
+
+  margin-top:-10px;
+  margin-bottom: -30px;
+}
+
+.navbar-links ul {
+  display: flex;
+  justify-content: center;
+
+}
+
+.navbar-links li {
+    list-style: none;
+    
+    margin-bottom: 50px;
+    text-align: center;
+    list-style-type: none;
+    margin-top:30px;
+    position: center;
+}
+
+
+.navbar-links li a {
+  font-weight: bold;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 16px 20px 20px;
+  text-decoration: none;    
+  font-family: 'ARCADE_N';
+  font-size: 17px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 900px) {
+.navbar {
+    position:fixed;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin-right: 64px;
+    line-height: 2%;
+}
+
+.toggle-button {
+    display: flex;
+    padding: 15px;
+    padding-right: 80px;
+}
+
+.navbar-links {
+    position:flex;
+    display: none;
+    width: 100%;
+}
+
+.navbar-links ul {
+    width: 100%;
+    padding: -10px;
+    margin-top: 10px;
+    margin-left:-550px;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar-links ul li {
+    text-align: center;
+    padding-left: -2px;
+    position: center;
+}
+
+.navbar-links ul li a {
+    position:static;
+    margin-top: 14px;
+    padding-left: -2px;
+   
+    margin-bottom:-40px;
+    font-size: 14px;
+    position: center;
+}
+
+.navbar-links.active {
+  text-align: center;
+  display: flex;
+}
+.gamepad {
+  width: 38%;
+  padding-top: 22px;
+  padding-left: 70px;
+}
+
+
+}
+
+  
+footer {
+  text-align: center;
+  padding: 5px;  
+  font-size: 20px;
+  background-color: aqua;
+}
+  
+
+  
+  /* koniec części wspólnej */
+
+
+ 
+
+  /* koniec strony <Strona Główna.html> */
+
+@media(max-width: 900px){
+.przedmioty {
+  width: 10px;
+}
+}
+  /* koniec strony koszyk.html*/
+
+
+  /* koniec strony <galeria.html> */
+
+  .historia-gier{
+    color : rgba(219,14,117,1);
+    text-shadow:4px 2px 2px rgba(255,255,255);
+    font-size:120px;
+    margin-top: -0.8px;
+
+    padding-top: 170px;
+    font-family: 'SuperMario256';
+    text-align: center;
+
+    
+  }
+  .historia-tytuł {
+    font-family: 'Press start 2P';
+    font-size: 18px;
+    padding: 20px;
+    position: center;
+  }
+  @media(max-width:900px){
+      .historia-gier{
+        color : rgba(219,14,117,1);
+        text-shadow:3px 2px 1px rgb(207, 255, 62);
+        font-size:50px;
+        margin-top: -0.8px;
+    
+        padding-top: 100px;
+        font-family: 'SuperMario256';
+        text-align: center;
+      }
+    .historia-tytuł {
+      font-family: 'Press start 2P';
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+
+  .lata-70 {
+    font-family:'Ubuntu', sans-serif;
+    font-size: 20px;
+    background: rgba(72, 50, 196, 0.301);
+    color:antiquewhite;
+    text-align: center;
+    text-shadow: 2px 2px 2px #FFB650,
+                  4px 4px 4px  #80f0ff,
+                  6px 6px 6px #EF5097;                  
+    padding: 22px;
+    border:ridge rgb(68, 227, 255) 7px;
+  }
+
+
+
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+/* sekcja na logo */
+
+/*lata 70 */
+.Asteroids {
+  margin-top: 20px;
+  width: 20%;
+
+}
+.Space_Invaders {
+  width: 20%;
+}
+.pong {
+  width: 20%;
+}
+
+.star-trek {
+  width: 30%;
+}
+.superman {
+  width: 18%;
+}
+.microsoft-flying-simulator {
+  width: 20%;
+}
+/*lata 80 */
+.contra {
+  width:20%;
+  margin-bottom:20px;
+}
+.donkey-kong {
+  width:30%;
+  margin-bottom:30px;
+}
+.pac-man {
+  width:30%;
+  margin-bottom:20px;
+}
+.super-mario {
+  width:20%;
+  margin-bottom:20px;
+}
+.wolfenstein {
+  width:20%;
+  margin-bottom:20px;
+}
+.the-legend-of-zelda {
+  width:20%;
+  margin-bottom:20px;
+}
+/*lata 90 */
+.house-of-the-dead-2{
+  width: 30%;
+}
+.street-fighter2 {
+  width: 30%;
+}
+.final-fight {
+  width: 30%;
+}
+.half-life{
+  width: 40%;   
+}
+.simcity2000{
+
+}
+.doom {
+
+}
+/* lata 2000 */
+.angry-birds {
+  width: 40%;
+}
+.bejeweled {
+  width: 30%;
+}
+.the-sims{
+  width: 40%; 
+}
+.deus-ex{
+  width: 30%; 
+  margin-bottom:40px;
+}
+.thps2{
+  width: 40%; 
+  margin-bottom:40px;
+}
+/*lata 2010 */
+.beat-saber {
+  margin-bottom:40px;
+}
+.doom-vfr {
+  width: 30%;
+  margin-bottom:40px;
+}
+.superhot-vr{
+  width: 60%;
+}
+.super-mario-odyssey {
+  width: 40%;
+}
+.rdr2 {
+  width: 50%;
+}
+.the-witcher3{
+  width: 40%;
+}
+
+/* media */
+@media (max-width : 900px) {
+  /*lata 70 */
+  .Asteroids {
+    margin-top: 20px;
+    width: 50%;
+  }
+  .Space_Invaders {
+    width: 40%;
+  }
+  .pong {
+    width: 40%;
+  }
+
+  .star-trek {
+    width: 50%;
+  }
+  .superman {
+    width: 40%;
+  }
+  .microsoft-flying-simulator {
+    width: 30%;
+  }
+  /*lata 80 */
+  .contra {
+    width:40%;
+    margin-bottom:20px;
+  }
+  .donkey-kong {
+    width:40%;
+    margin-bottom:30px;
+  }
+  .pac-man {
+    width:50%;
+    margin-bottom:20px;
+  }
+  .super-mario {
+    width:40%;
+    margin-bottom:20px;
+  }
+  .wolfenstein {
+    width:40%;
+    margin-bottom:20px;
+  }
+  .the-legend-of-zelda {
+    width:40%;
+    margin-bottom:20px;
+  }
+  /*lata 90 */
+  .house-of-the-dead-2{
+    width: 44%;
+  }
+  .street-fighter2 {
+    width: 40%;
+  }
+  .final-fight {
+    width: 40%;
+  }
+
+  .half-life{
+    width: 40%;   
+  }
+  .simcity2000{
+    width: 50%; 
+  }
+  .doom {
+    width: 50%; 
+  }
+
+  .the-sims{
+    width: 40%; 
+  }
+  /* lata 2000 */
+  .angry-birds {
+    width:60%;
+  }
+  .bejeweled {
+    width: 50%;
+  }
+  .the-sims{
+    width: 40%; 
+  }
+  .deus-ex{
+    width: 40%; 
+  }
+  .thps2{
+    width: 50%; 
+  }
+  /* lata 2010 */
+  .beat-saber {
+    width:40%;
+  }
+  .doom-vfr {
+    width: 50%;
+  }
+  .superhot-vr{
+  
+  }
+  .super-mario-odyssey {
+  width: 50%;
+  }
+  .rdr2 {
+    width: 50%;
+  }
+  .the-witcher3{
+    width: 50%;
+  }
+
+}
+/* sekcja na logo */
+
+
+.lata-80 {
+  font-family:'Ubuntu', sans-serif;
+  font-size: 20px;
+  background: rgba(50, 174, 196, 0.301);
+  color:antiquewhite;
+  text-align: center;
+  text-shadow: 2px 2px 2px #50ff9f,
+                4px 4px 4px  #FF80BF,
+                6px 6px 6px #ef505db9; 
+                padding: 22px;
+  border:ridge 7px;
+
+}
+li {
+  list-style-type: none;
+  position: center;
+}
+
+
+
+/* CSS */
+.button2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button2:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+/* gify */
+.pong-gif {
+  width:30%;
+  height:30%;
+  border:ridge 8px rgb(68, 255, 146);
+  cursor:pointer;
+}
+.wolfenstein-gif {
+  width:40%;
+  height:50%;
+  border:ridge 8px rgb(68, 255, 193);
+  cursor: grabbing;
+}
+.final-fight-gif{
+  width:30%;
+  height:50%;
+  border:ridge 8px #44f;
+  cursor:pointer;
+}
+
+@media (max-width :900px){
+  .pong-gif {
+  width:70%;
+  height:60%;
+
+}
+.wolfenstein-gif {
+  width:80%;
+  height:60%;
+
+}
+.final-fight-gif{
+  width:70%;
+  height:60%;
+
+}
+}
+/* gify */
+
+.lata-90 {
+  font-family:'Ubuntu', sans-serif;
+  font-size: 20px;
+  background: rgba(50, 174, 196, 0.301);
+  color:rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 2px 2px 2px #ff50f0,
+                4px 4px 4px  #FF80BF,
+                6px 6px 6px #bbe71c85;
+                padding: 22px;
+  border:ridge rgb(68, 255, 124) 7px;
+
+}
+
+.lata-dwutysięczne {
+  font-family:'Ubuntu', sans-serif;
+  font-size: 20px;
+  background: rgba(50, 174, 196, 0.301);
+  color:rgb(0, 0, 0);
+  text-align: center;
+  text-shadow: 2px 2px 2px #50f9ff,
+                4px 4px 4px  #fdbb48,
+                6px 6px 6px #c550efb9; 
+                padding: 22px;
+  border:ridge #dbfa2e 7px;
+
+}
+.wikipedia{
+  font-family:'Ubuntu', sans-serif;
+  font-size: 40px;
+  background: rgba(50, 174, 196, 0.301);
+  color:rgb(0, 0, 0);
+  text-align: center;
+  text-shadow: 4px 4px 2px #50f9ff,
+                6px 6px 4px  #fdbb48;
+                padding: 22px;
+  border:ridge #fa2ed5 7px;
+}
+/* koniec historia.html */
+/* memory.html */
+
+.memory {
+  font-family:'Ubuntu', sans-serif;
+  color: white;
+  text-shadow: 4px 3px 4px #44f;
+  padding-top: 80px;
+  text-align: center;
+
+}
+.memory-tytul {
+  font-family:'Press Start 2P', sans-serif;
+  color: white;
+  text-shadow: 4px 3px 4px rgb(255, 68, 239),
+  6px 6px 7px rgb(68, 227, 255);
+  padding-top: 20px;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 23px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor:help;
+}
+.score {
+  font-family:'Ubuntu', sans-serif;
+  color: white;
+  text-shadow: 4px 3px 4px #44f;
+  margin-top: 50px;
+  letter-spacing: 2px;
+}
+@media (max-width:900px){
+  .memory {
+    font-family:'Ubuntu', sans-serif;  
+    
+    padding-top: 50px; 
+    text-align: center;
+    padding-left:30px;
+    width:300px;
+    text-align: center;
+  }
+  .memory-tytul {
+    font-family: 'Press start 2P';
+    text-shadow: 4px 3px 4px rgb(255, 68, 239),
+                6px 6px 7px rgb(68, 227, 255);
+    padding-top: 10px; 
+    text-align: center;
+    width:300px;
+    text-align: center;
+    font-size: 40px;
+  }
+}
+
+.board
+{
+    padding: 10px;
+    width: 600px;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    position:static;
+} 
+
+
+
+.cardA
+{
+    width: 125px;
+    height: 125px;
+    display:inline-block;
+    margin:3px;
+    background-image: url("img/karta.png");
+    border:4px solid #e9b64a;
+    border-radius: 4px;
+    cursor:default;
+    filter:brightness(100%);
+    transition: all .3s ease-in-out;
+}
+
+.card
+{
+    width:125px;
+    height: 125px;
+    display: inline-block;
+    margin: 3px;
+    background-image:url("img/karta.png");
+    border: 4px solid #51C8B2;
+    border-radius: 4px;
+    cursor:crosshair;
+    filter:brightness(65%);
+    transition:all .3s ease-in-out;
+    
+}
+
+.card:hover
+{
+    border:4px solid #e9b64a;
+    filter: brightness(100%);
+}
+@media (max-width: 900px){
+  .board
+  {
+      padding: 10px;
+      width: 300px;
+      
+      margin-right:auto;
+      text-align: center;
+      position:static;
+  }
+  .cardA
+{
+    width: 82px;
+    height: 82px;
+    display:inline-block;
+    margin:3px;
+    background-image: url("img/karta.png");
+    border:4px solid #e9b64a;
+    border-radius: 4px;
+    cursor:default;
+    filter:brightness(100%);
+    transition: all .3s ease-in-out;
+}
+
+.card
+{
+    width:82px;
+    height: 82px;
+    display: inline-block;
+    margin: 3px;
+    background-image:url("img/karta.png");
+    border: 4px solid #51C8B2;
+    border-radius: 4px;
+    cursor:crosshair;
+    filter:brightness(65%);
+    transition:all .3s ease-in-out;
+    
+}
+
+.card:hover
+{
+    border:4px solid #e9b64a;
+    filter: brightness(100%);
+}
+}
+
+
+/* memory.html */
