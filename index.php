@@ -7,28 +7,14 @@ session_start();
 	<head>
 		<title>Koszyk</title>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styles.css">
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>       
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="styles.css">
-		<style>
-		.popover
-		{
-		    width: 100%;
-		    max-width: 800px;
-		}
-		.navbar-fixed {
-            position: fixed;
-            top: 0;
-            width: 100%;
-        }
-		 #display_item {
-            margin-top: 50px; /* Adjust the margin-top value as needed */
-        }
-		</style>
+	
 	</head>
-	<body class="strona">
+	<body class="body">
 		<nav class="navbar">
                     <div class="brand-title"></div>
                     <ul class="topnav">
@@ -41,56 +27,61 @@ session_start();
                             <ul>
                                 <img class="gamepad" src="zdj/gameboy-projekt.png" alt="gameboy">
                                 <li><a href="Strona Główna.html">Strona Glowna</a></li>
-                                <li><a href="koszyk.html">O nas</a></li>
+                                <li><a href="example/index.php">O nas</a></li>
                                 <li><a href="#">Wyszukiwarka</a></li>
                                 <li><a href="historia.html">O historii gier</a></li>
                                 <li><a href="memory.html">Gry</a></li>
                             </ul>
 
                         </div>
-                </nav>
-				
-		<div class="container" style="position: inherit">
-			<br />
-			<h3>Koszyk</h3>
-			<br />
+            </nav>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+
+
+		<div class="container" >
+
+
 			
-				<div class="container-fluid">
+				<div>
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Menu</span>
-						<span class="glyphicon glyphicon-menu-hamburger"></span>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" hidden>
+						<span class="sr-only" type="button" >Menu</span>
+
 						</button>
 						
 					</div>
-					<div id="navbar-cart" class="navbar-collapse collapse">
-						<ul class="nav navbar-nav">
-							<li>
-								<a id="cart-popover" class="btn" data-placement="bottom" title="Shopping Cart">
-									<span class="glyphicon glyphicon-shopping-cart"></span>
-									<span class="badge"></span>
-									<span class="total_price">$ 0.00</span>
-								</a>
-							</li>
-						</ul>
+
+					<div class="koszyk">
+
+								<button id="cart-popover" type="button"data-placement="bottom" title="Koszyk">
+								<i class="fa fa-cart-plus"></i>
+								<span class="total_price" >$ 0.00</span>
+								</button>
 					</div>
 				</div>
-			
-			
-			<div id="popover_content_wrapper" style="display: none">
+
+			<div id="popover_content_wrapper" class="popover" style="display: none">
 				<span id="cart_details"></span>
-				<div align="right">
+				<div text-align="right">
 					<a href="order_process.php" class="btn btn-primary" id="check_out_cart">
-						<span class="glyphicon glyphicon-shopping-cart"></span> Przejdź do koszyka
+						<span></span> Przejdź do koszyka
 					</a>
 					<a href="#" class="btn btn-default" id="clear_cart">
 						<span class="glyphicon glyphicon-trash"></span> Wyczyść
 					</a>
 				</div>
 			</div>
-			</nav>
 			
-			<?php
+			
+				<?php
 				if(isset($_SESSION["success_message"]))
 				{
 					echo '
@@ -101,44 +92,81 @@ session_start();
 					unset($_SESSION["success_message"]);
 				}
 				?>
-
-			<div class="przedmioty">
-				<div class="col-md-3" style="margin-top:12px;">  
-					<div style="border:10px solid #333; background-color:#f1f1f1; border-radius:5px; padding:16px; height:450px; text-align="center">
-						<img src="images/image-1.jpg" class="img-responsive">
-						<br>
-						<h4 class="text-info">T-shirt 1</h4>
-						<h4 class="text-danger">$ 350.00</h4>
-						<input type="text" name="quantity" id="quantity1" class="form-control" value="1">
+			<div class="container2">
+				<div class="przedmioty">
+					<img src="images/image-1.jpg" class="image">
+					<br>
+					<h4 class="text-info">T-shirt 1</h4>
+					<h4 class="text-danger">$ 350.00</h4>
+					<input type="text" name="quantity" id="quantity1" class="form-control" value="1">
 						
-						<input type="hidden" name="hidden_name" id="name1" value="T-shirt 1">
-						<input type="hidden" name="hidden_price" id="price1" value="350.00">
-						<input type="button" name="add_to_cart" id="1" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
-					</div>
+					<input type="hidden" name="hidden_name" id="name1" value="T-shirt 1">
+					<input type="hidden" name="hidden_price" id="price1" value="350.00">
+					<input type="button" name="add_to_cart" id="1" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
 				</div>
-				<div class="col-md-3" style="margin-top:12px;">  
-					<div style="border:1px solid #333; background-color:#f1f1f1; border-radius:5px; padding:16px; height:450px;" align="center">
-						<img src="images/image-1.jpg" class="img-responsive">
-						<br>
-						<h4 class="text-info">T-shirt 2</h4>
-						<h4 class="text-danger">$ 350.00</h4>
-						<input type="text" name="quantity" id="quantity1" class="form-control" value="1">
+				<div class="przedmioty">  
+					
+					<img src="images/image-2.jpg" class="image">
+					<br>
+					<h4>T-shirt 2</h4>
+					<h4>$ 350.00</h4>
+					<input type="text" name="quantity" id="quantity1" class="form-control" value="1">
 						
-						<input type="hidden" name="hidden_name" id="name1" value="T-shirt 1">
-						<input type="hidden" name="hidden_price" id="price1" value="350.00">
-						<input type="button" name="add_to_cart" id="1" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
-					</div>
+					<input type="hidden" name="hidden_name" id="name1" value="T-shirt 1">
+					<input type="hidden" name="hidden_price" id="price1" value="350.00">
+					<input type="button" name="add_to_cart" id="1" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+				
+				</div>
+				<div class="przedmioty">  
+					
+					<img src="images/image-2.jpg" class="image">
+					<br>
+					<h4>T-shirt 2</h4>
+					<h4>$ 350.00</h4>
+					<input type="text" name="quantity" id="quantity1" class="form-control" value="1">
+						
+					<input type="hidden" name="hidden_name" id="name1" value="T-shirt 1">
+					<input type="hidden" name="hidden_price" id="price1" value="350.00">
+					<input type="button" name="add_to_cart" id="1" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+				
+				</div><div class="przedmioty">  
+					
+					<img src="images/image-2.jpg" class="image">
+					<br>
+					<h4>T-shirt 2</h4>
+					<h4>$ 350.00</h4>
+					<input type="text" name="quantity" id="quantity1" class="form-control" value="1">
+						
+					<input type="hidden" name="hidden_name" id="name1" value="T-shirt 1">
+					<input type="hidden" name="hidden_price" id="price1" value="350.00">
+					<input type="button" name="add_to_cart" id="1" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+				
+				</div><div class="przedmioty">  
+					
+					<img src="images/image-2.jpg" class="image">
+					<br>
+					<h4>T-shirt 2</h4>
+					<h4>$ 350.00</h4>
+					<input type="text" name="quantity" id="quantity1" class="form-control" value="1">
+						
+					<input type="hidden" name="hidden_name" id="name1" value="T-shirt 1">
+					<input type="hidden" name="hidden_price" id="price1" value="350.00">
+					<input type="button" name="add_to_cart" id="1" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+				
 				</div>
 			</div>
+		
 			
 
-				
+			
 				<br />
 				<br />
 			</div>
 		</div>
+		
+	
 
-
+		
 <script>  
 $(document).ready(function(){
 
@@ -235,9 +263,11 @@ $(document).ready(function(){
 			url:"action.php",
 			method:"POST",
 			data:{action:action},
-			success:function()
+	
+		success:function()
 			{
 				load_cart_data();
+				
 				$('#cart-popover').popover('hide');
 				alert("Koszyk został wyczyszczony");
 			}
@@ -245,5 +275,8 @@ $(document).ready(function(){
 	});
     
 });
-
 </script>
+<script src="script.js"></script> 
+<footer>ChujXXX</footer>
+</body>
+</html>

@@ -34,7 +34,7 @@ CREATE TABLE `order_item` (
   `order_item_name` varchar(250) NOT NULL,
   `order_item_quantity` int(11) NOT NULL,
   `order_item_price` double(12,2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8_unicode_ci;
 
 --
 -- Dumping data for table `order_item`
@@ -73,7 +73,7 @@ CREATE TABLE `order_table` (
   `customer_pin` varchar(30) NOT NULL,
   `customer_state` varchar(250) NOT NULL,
   `customer_country` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8_unicode_ci;
 
 --
 -- Dumping data for table `order_table`
@@ -93,7 +93,7 @@ CREATE TABLE `tbl_product` (
   `name` varchar(255) NOT NULL,
   `image` varchar(255) NOT NULL,
   `price` double(10,2) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8_unicode_ci;
 
 --
 -- Dumping data for table `tbl_product`

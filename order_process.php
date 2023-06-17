@@ -12,7 +12,7 @@ $order_details = '
 <div class="table-responsive" id="order_table">
 	<table class="table table-bordered table-striped">
 		<tr>  
-            <th>Product Name</th>  
+            <th style="border:2px #444;">Product Name</th>  
             <th>Quantity</th>  
             <th>Price</th>  
             <th>Total</th>  

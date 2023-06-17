@@ -173,12 +173,201 @@ footer {
 
   /* koniec strony <Strona Główna.html> */
 
-@media(max-width: 900px){
-.przedmioty {
-  width: 10px;
+  .kolekcjonerki {
+    font-family:'Ubuntu', sans-serif;
+    margin-left: 60px;
+    padding: 160px;
+    font-size:70px;
+    text-shadow: 2px 1px 2px #11e4efbb, 4px 5px 2px #ac11efbb;
+    text-align: center;
+    border-style: outset 1px;
+  }
+
+
+
+
+
+.sklep {
+  white-space: nowrap;
+  text-align: center;
 }
+
+.dziecko,
+.piła,
+.gogle {
+  display: inline-block;
+  margin-right: 10px;
 }
+
+.dziecko img {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+  display: flex;
+}
+
+.dziecko:hover img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.piła img {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+  display: flex;
+}
+
+.piła:hover img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.gogle img {
+width: 200px;
+height: auto;
+margin-right: 10px;
+display: flex;
+}
+.gogle:hover img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .sklep{
+    width: 10%;
+
+  }
+  .kolekcjonerki {
+    font-size: 20px;
+    
+  }
+}
+
+
+
   /* koniec strony koszyk.html*/
+
+  .koszyk {
+    text-align: center;
+    padding-left: 200px;
+    padding: 20px;
+    
+
+  }
+
+#cart-popover {
+  margin-bottom: -200px;
+  margin-left: 790px;
+  text-decoration: none;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  font-family:'Ubuntu';
+}
+
+#cart-popover i {
+  margin-right: 5px;
+}
+
+.fade.in {
+  opacity: 1;
+}
+.popover {
+  width: 100%;
+  max-width: 80px;
+}
+.popover {
+  position: center;
+  padding: 20px 200px 20px 200px;
+
+
+  max-width: 276px;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  font-style: normal;
+
+
+
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+
+
+.total_price {
+  margin-left: 5px;
+}
+.popover{
+
+  border: 2px rgb(255, 255, 255);
+  background-color: #035565;
+}
+.container2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  padding-left:40px;
+  padding-top:30px;
+}
+.przedmioty{
+
+  border-radius: 25px;
+  background: #ffffff;
+  padding: 15px;
+  padding-right:20px;
+  margin-left: 4px;
+  width: 500px;
+  height: 650px;
+  text-align: center;
+  font-family: 'Press Start 2P';
+  font-size: 16px;
+  margin-top: 60px;
+  
+}
+@media(max-width:900px){
+  .container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 200px;
+    padding-bottom: 80px;
+  }
+    .przedmioty{
+      
+      border-radius: 25px;
+      background: #ffffff;
+      padding: 15px;
+      padding-bottom:20px;
+      width: 250px;
+      height: 380px;
+      font-family: 'Press Start 2P';
+      font-size: 16px;
+      margin-top: 60px;
+      
+  }
+  .image{
+    width:80%
+
+  }
+  .koszyk{
+    border:#035565 2px;
+
+
+    text-align: center;
+    font-size: 40px;
+
+
+  }
+}
 
 
   /* koniec strony <galeria.html> */
