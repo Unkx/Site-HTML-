@@ -94,67 +94,46 @@ session_start();
 				?>
 			<div class="container2">
 				<div class="przedmioty">
-					<img src="images/image-1.jpg" class="image">
+					<img src="images/image-2.jpg" class="image">
 					<br>
-					<h4 class="text-info">T-shirt 1</h4>
-					<h4 class="text-danger">$ 350.00</h4>
-					<input type="text" name="quantity" id="quantity1" class="form-control" value="1">
+					<h4 class="text-info">T-shirt 2</h4>
+					<h4 class="text-danger">$ 460.00</h4>
+					<input type="text" name="quantity" id="quantity2" class="form-control" value="1">
 						
-					<input type="hidden" name="hidden_name" id="name1" value="T-shirt 1">
-					<input type="hidden" name="hidden_price" id="price1" value="350.00">
+					<input type="hidden" name="hidden_name" id="name2" value="T-shirt 2">
+					<input type="hidden" name="hidden_price" id="price2" value="460.00">
 					<input type="button" name="add_to_cart" id="1" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
 				</div>
-				<div class="przedmioty">  
-					
+
+			</div>
+			<div class="container2">
+				<div class="przedmioty">
 					<img src="images/image-2.jpg" class="image">
 					<br>
-					<h4>T-shirt 2</h4>
-					<h4>$ 350.00</h4>
-					<input type="text" name="quantity" id="quantity1" class="form-control" value="1">
+					<h4 class="text-info">T-shirt 2</h4>
+					<h4 class="text-danger">$ 460.00</h4>
+					<input type="text" name="quantity" id="quantity2" class="form-control" value="1">
 						
-					<input type="hidden" name="hidden_name" id="name1" value="T-shirt 1">
-					<input type="hidden" name="hidden_price" id="price1" value="350.00">
-					<input type="button" name="add_to_cart" id="1" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
-				
-				</div>
-				<div class="przedmioty">  
-					
-					<img src="images/image-2.jpg" class="image">
-					<br>
-					<h4>T-shirt 2</h4>
-					<h4>$ 350.00</h4>
-					<input type="text" name="quantity" id="quantity1" class="form-control" value="1">
-						
-					<input type="hidden" name="hidden_name" id="name1" value="T-shirt 1">
-					<input type="hidden" name="hidden_price" id="price1" value="350.00">
-					<input type="button" name="add_to_cart" id="1" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
-				
-				</div><div class="przedmioty">  
-					
-					<img src="images/image-2.jpg" class="image">
-					<br>
-					<h4>T-shirt 2</h4>
-					<h4>$ 350.00</h4>
-					<input type="text" name="quantity" id="quantity1" class="form-control" value="1">
-						
-					<input type="hidden" name="hidden_name" id="name1" value="T-shirt 1">
-					<input type="hidden" name="hidden_price" id="price1" value="350.00">
-					<input type="button" name="add_to_cart" id="1" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
-				
-				</div><div class="przedmioty">  
-					
-					<img src="images/image-2.jpg" class="image">
-					<br>
-					<h4>T-shirt 2</h4>
-					<h4>$ 350.00</h4>
-					<input type="text" name="quantity" id="quantity1" class="form-control" value="1">
-						
-					<input type="hidden" name="hidden_name" id="name1" value="T-shirt 1">
-					<input type="hidden" name="hidden_price" id="price1" value="350.00">
-					<input type="button" name="add_to_cart" id="1" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
-				
+					<input type="hidden" name="hidden_name" id="name2" value="T-shirt 2">
+					<input type="hidden" name="hidden_price" id="price2" value="460.00">
+					<input type="button" name="add_to_cart" id="2" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
 				</div>
 			</div>
+			<div class="container2">
+				<div class="przedmioty">
+					<img src="images/image-2.jpg" class="image">
+					<br>
+					<h4 class="text-info">T-shirt 2</h4>
+					<h4 class="text-danger">$ 460.00</h4>
+					<input type="text" name="quantity" id="quantity9" class="form-control" value="1">
+						
+					<input type="hidden" name="hidden_name" id="name9" value="T-shirt 2">
+					<input type="hidden" name="hidden_price" id="price9" value="468.00">
+					<input type="button" name="add_to_cart" id="9" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+				</div>
+			</div>
+
+
 		
 			
 
