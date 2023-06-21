@@ -106,7 +106,7 @@ session_start();
 				</div>
 
 			</div>
-			<div class="container2">
+
 				<div class="przedmioty">
 					<img src="images/image-2.jpg" class="image">
 					<br>
@@ -118,8 +118,7 @@ session_start();
 					<input type="hidden" name="hidden_price" id="price2" value="460.00">
 					<input type="button" name="add_to_cart" id="2" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
 				</div>
-			</div>
-			<div class="container2">
+
 				<div class="przedmioty">
 					<img src="images/image-2.jpg" class="image">
 					<br>
@@ -131,7 +130,7 @@ session_start();
 					<input type="hidden" name="hidden_price" id="price9" value="468.00">
 					<input type="button" name="add_to_cart" id="9" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
 				</div>
-			</div>
+
 
 
 		
