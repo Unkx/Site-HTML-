@@ -93,43 +93,96 @@ session_start();
 				}
 				?>
 			<div class="container2">
-				<div class="przedmioty">
-					<img src="images/image-2.jpg" class="image">
+				<div class="dark">
+					<img src="images/BB-Pod.png" class="imageBB">
 					<br>
-					<h4 class="text-info">T-shirt 2</h4>
-					<h4 class="text-danger">$ 460.00</h4>
-					<input type="text" name="quantity" id="quantity2" class="form-control" value="1">
+					<h4 class="text-info">BB-Pod</h4>
+					<h4 class="text-danger">$ 230.00</h4>
+					<input type="text" name="quantity" id="quantity1" class="form-control" value="1">
 						
-					<input type="hidden" name="hidden_name" id="name2" value="T-shirt 2">
-					<input type="hidden" name="hidden_price" id="price2" value="460.00">
+					<input type="hidden" name="hidden_name" id="name1" value="BB-Pod">
+					<input type="hidden" name="hidden_price" id="price1" value="230.00">
 					<input type="button" name="add_to_cart" id="1" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
 				</div>
 
-			</div>
+			
 
 				<div class="przedmioty">
-					<img src="images/image-2.jpg" class="image">
+					<img src="images/doom-helmet.jpg" class="imageDoom">
 					<br>
-					<h4 class="text-info">T-shirt 2</h4>
-					<h4 class="text-danger">$ 460.00</h4>
+					<h4 class="text-info">Doom Helmet</h4>
+					<h4 class="text-danger">$ 300.00</h4>
 					<input type="text" name="quantity" id="quantity2" class="form-control" value="1">
 						
-					<input type="hidden" name="hidden_name" id="name2" value="T-shirt 2">
-					<input type="hidden" name="hidden_price" id="price2" value="460.00">
+					<input type="hidden" name="hidden_name" id="name2" value="Doom Helmet">
+					<input type="hidden" name="hidden_price" id="price2" value="300.00">
 					<input type="button" name="add_to_cart" id="2" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
 				</div>
 
-				<div class="przedmioty">
-					<img src="images/image-2.jpg" class="image">
+				<div class="dark">
+					<img src="images/gogle.jpg" class="image-gogle">
 					<br>
-					<h4 class="text-info">T-shirt 2</h4>
-					<h4 class="text-danger">$ 460.00</h4>
-					<input type="text" name="quantity" id="quantity9" class="form-control" value="1">
+					<br>
+					<br>
+					<br>
+					<br>
+					<h4 class="text-info">Night vision goggles</h4>
+					<h4 class="text-danger">$ 160.00</h4>
+					<input type="text" name="quantity" id="quantity3" class="form-control" value="1">
 						
-					<input type="hidden" name="hidden_name" id="name9" value="T-shirt 2">
-					<input type="hidden" name="hidden_price" id="price9" value="468.00">
-					<input type="button" name="add_to_cart" id="9" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+					<input type="hidden" name="hidden_name" id="name3" value="Goggles">
+					<input type="hidden" name="hidden_price" id="price3" value="160.00">
+					<input type="button" name="add_to_cart" id="3" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
 				</div>
+
+				<div class="przedmioty">
+					<img src="images/pipboy.jpg" class="image-pip">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h4 class="text-info">Pip Boy</h4>
+					<h4 class="text-danger">$ 120.00</h4>
+					<input type="text" name="quantity" id="quantity4" class="form-control" value="1">
+						
+					<input type="hidden" name="hidden_name" id="name4" value="Pip Boy">
+					<input type="hidden" name="hidden_price" id="price4" value="120.00">
+					<input type="button" name="add_to_cart" id="4" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+				</div> 
+
+				<div class="dark">
+					<img src="images/dead-island.jpg" class="image-dead">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h4 class="text-info">Dead Island Collector's</h4>
+					<h4 class="text-danger">$ 90.00</h4>
+					<input type="text" name="quantity" id="quantity5" class="form-control" value="1">
+						
+					<input type="hidden" name="hidden_name" id="name5" value="Dead Island Collector's">
+					<input type="hidden" name="hidden_price" id="price5" value="90.00">
+					<input type="button" name="add_to_cart" id="5" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+				</div>
+				<div class="przedmioty">
+					<img src="images/mass-effect.jpg" class="image-łazik">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h4 class="text-info">Nomad ND1</h4>
+					<h4 class="text-danger">$ 190.00</h4>
+					<input type="text" name="quantity" id="quantity6" class="form-control" value="1">
+						
+					<input type="hidden" name="hidden_name" id="name6" value="Nomad ND1">
+					<input type="hidden" name="hidden_price" id="price6" value="190.00">
+					<input type="button" name="add_to_cart" id="6" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+				</div> 
+				
+			</div>
 
 
 

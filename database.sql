@@ -34,21 +34,20 @@ CREATE TABLE `order_item` (
   `order_item_name` varchar(250) NOT NULL,
   `order_item_quantity` int(11) NOT NULL,
   `order_item_price` double(12,2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `order_item`
 --
 
 INSERT INTO `order_item` (`order_item_id`, `order_id`, `order_item_name`, `order_item_quantity`, `order_item_price`) VALUES
-(1, 1, 'T-shirt 3', 1, 400.00),
-(2, 2, 'T-shirt 2', 1, 460.00),
-(3, 2, 'T-shirt 1', 1, 350.00),
-(4, 3, 'T-shirt 1', 1, 350.00),
-(5, 4, 'T-shirt 2', 1, 460.00),
-(6, 5, 'T-shirt 2', 1, 460.00),
-(7, 6, 'T-shirt 7', 1, 270.00),
-(8, 6, 'T-shirt 3', 1, 400.00);
+(2, 2, 'Doom Helmet', 1, 30.00),
+(1, 1, 'BB-Pod', 1, 230.00),
+(3,3, 'Gogle', 1, 160.00),
+(4, 4, 'Pip Boy', 1, 120.00),
+(5, 5, 'Dead Island Collectors', 1, 90.00),
+(6,6, 'Nomad ND1', 1, 190.00);
+
 
 -- --------------------------------------------------------
 
@@ -73,7 +72,7 @@ CREATE TABLE `order_table` (
   `customer_pin` varchar(30) NOT NULL,
   `customer_state` varchar(250) NOT NULL,
   `customer_country` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `order_table`
@@ -93,20 +92,20 @@ CREATE TABLE `tbl_product` (
   `name` varchar(255) NOT NULL,
   `image` varchar(255) NOT NULL,
   `price` double(10,2) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8_unicode_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_product`
 --
 
 INSERT INTO `tbl_product` (`id`, `name`, `image`, `price`) VALUES
-(1, 'T-shirt 1', 'image-1.jpg', 350.00),
-(2, 'T-shirt 2', 'image-2.jpg', 460.00),
-(3, 'T-shirt 3', 'image-3.png', 400.00),
-(4, 'T-shirt 4', 'image-4.jpg', 530.00),
-(5, 'T-shirt 5', 'image-5.jpg', 400.00),
-(6, 'T-shirt 6', 'image-6.jpg', 320.00),
-(7, 'T-shirt 7', 'image-7.jpg', 270.00);
+(1, 'BB-Pod', 'BB-Pod.png', 230.00),
+(2, 'Doom Helmet', 'doom-helmet.jpg', 300.00),
+(3, 'Gogle', 'gogle.jpg', 400.00),
+(4, 'Pip Boy', 'pipboy.jpg', 120.00),
+(5, 'Dead Island Collectors', 'dead-island.jpg', 90.00),
+(6, 'Nomad ND1', 'mass-effect.jpg', 190.00);
+
 
 --
 -- Indexes for dumped tables
