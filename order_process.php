@@ -12,10 +12,10 @@ $order_details = '
 <div class="table-responsive" id="order_table">
 	<table class="table table-bordered table-striped">
 		<tr>  
-            <th style="border:2px #444;">Product Name</th>  
-            <th>Quantity</th>  
-            <th>Price</th>  
-            <th>Total</th>  
+            <th style="border:2px #444;">Nazwa Produktu</th>  
+            <th>Ilość</th>  
+            <th>Cena</th>  
+            <th>Podsumowanie</th>  
         </tr>
 ';
 
@@ -50,7 +50,7 @@ $order_details .= '</table>';
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PHP Shopping Cart with Stripe Payment Integration</title>
+		<title>Koszyk</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -69,45 +69,45 @@ $order_details .= '</table>';
 		}
 		</style>
 	</head>
-	<body>
+	<body style="background-color: #0023">
 		<div class="container">
 			<br />
-			<h3 align="center"><a href="#">PHP Shopping Cart with Stripe Payment Integration</a></h3>
+			
 			<br />
 			<span id="message"></span>
 			<div class="panel panel-default">
-				<div class="panel-heading">Order Process</div>
+				<div class="panel-heading" style="text-align:center">Podsumowanie zakupów</div>
 				<div class="panel-body">
 					<form method="post" id="order_process_form" action="payment.php">
 						<div class="row">
 							<div class="col-md-8" style="border-right:1px solid #ddd;">
-								<h4 align="center">Customer Details</h4>
+								<h4 align="center">Dane Klienta</h4>
 								<div class="form-group">
-									<label><b>Card Holder Name <span class="text-danger">*</span></b></label>
+									<label><b>Imię i nazwisko posiadacza karty<span class="text-danger">*</span></b></label>
 							        <input type="text" name="customer_name" id="customer_name" class="form-control" value="" />
 							        <span id="error_customer_name" class="text-danger"></span>
 							    </div>
 	    						<div class="form-group">
-	    							<label><b>Email Address <span class="text-danger">*</span></b></label>
+	    							<label><b>Adres Email <span class="text-danger">*</span></b></label>
 	    							<input type="text" name="email_address" id="email_address" class="form-control" value="" />
 	    							<span id="error_email_address" class="text-danger"></span>
 	    						</div>
 	    						<div class="form-group">
-	    							<label><b>Address <span class="text-danger">*</span></b></label>
+	    							<label><b>Adres <span class="text-danger">*</span></b></label>
 	    							<textarea name="customer_address" id="customer_address" class="form-control"></textarea>
 	    							<span id="error_customer_address" class="text-danger"></span>
 	    						</div>
 	    						<div class="row">
 	    							<div class="col-sm-6">
 	    								<div class="form-group">
-		    								<label><b>City <span class="text-danger">*</span></b></label>
+		    								<label><b>Miasto <span class="text-danger">*</span></b></label>
 			    							<input type="text" name="customer_city" id="customer_city" class="form-control" value="" />
 			    							<span id="error_customer_city" class="text-danger"></span>
 			    						</div>
 	    							</div>
 	    							<div class="col-sm-6">
 	    								<div class="form-group">
-	    									<label><b>Zip <span class="text-danger">*</span></b></label>
+	    									<label><b>Kod pocztowy <span class="text-danger">*</span></b></label>
 			    							<input type="text" name="customer_pin" id="customer_pin" class="form-control" value="" />
 			    							<span id="error_customer_pin" class="text-danger"></span>
 			    						</div>
@@ -116,39 +116,39 @@ $order_details .= '</table>';
 	    						<div class="row">
 	    							<div class="col-sm-6">
 	    								<div class="form-group">
-		    								<label><b>State </b></label>
+		    								<label><b>Województwo </b></label>
 			    							<input type="text" name="customer_state" id="customer_state" class="form-control" value="" />
 			    						</div>
 	    							</div>
 	    							<div class="col-sm-6">
 	    								<div class="form-group">
-		    								<label><b>Country <span class="text-danger">*</span></b></label>
+		    								<label><b>Miasto <span class="text-danger">*</span></b></label>
 		    								<input type="text" name="customer_country" id="customer_country" class="form-control" />
 		    								<span id="error_customer_country" class="text-danger"></span>
 			    						</div>
 	    							</div>
 	    						</div>
 	    						<hr />
-	    						<h4 align="center">Payment Details</h4>
+	    						<h4 align="center">Szczegóły płatności</h4>
 	    						<div class="form-group">
-						            <label>Card Number <span class="text-danger">*</span></label>
+						            <label>Numer Karty <span class="text-danger">*</span></label>
 						            <input type="text" name="card_holder_number" id="card_holder_number" class="form-control" placeholder="1234 5678 9012 3456" maxlength="20" onkeypress="" />
 						            <span id="error_card_number" class="text-danger"></span>
 						        </div>
 						        <div class="form-group">
 						          	<div class="row">
 						          		<div class="col-md-4">
-						          			<label>Expiry Month</label>
+						          			<label>Miesiąc wygaśnięcia karty</label>
 						          			<input type="text" name="card_expiry_month" id="card_expiry_month" class="form-control" placeholder="MM" maxlength="2" onkeypress="return only_number(event);" />
 						          			<span id="error_card_expiry_month" class="text-danger"></span>
 						          		</div>
 						          		<div class="col-md-4">
-						          			<label>Expiry Year</label>
+						          			<label>Rok wygaśnięcia karty</label>
 						          			<input type="text" name="card_expiry_year" id="card_expiry_year" class="form-control" placeholder="YYYY" maxlength="4" onkeypress="return only_number(event);" />
 						          			<span id="error_card_expiry_year" class="text-danger"></span>
 						          		</div>
 						          		<div class="col-md-4">
-						          			<label>CVC</label>
+						          			<label>Kod CVC</label>
 						          			<input type="text" name="card_cvc" id="card_cvc" class="form-control" placeholder="123" maxlength="4" onkeypress="return only_number(event);" />
 						          			<span id="error_card_cvc" class="text-danger"></span>
 						          		</div>
@@ -159,12 +159,12 @@ $order_details .= '</table>';
 									<input type="hidden" name="total_amount" value="<?php echo $total_price; ?>" />
 									<input type="hidden" name="currency_code" value="USD" />
 									<input type="hidden" name="item_details" value="<?php echo $item_details; ?>" />
-									<input type="button" name="button_action" id="button_action" class="btn btn-success btn-sm" onclick="stripePay(event)" value="Pay Now" />
+									<input type="button" name="button_action" id="button_action" class="btn btn-success btn-sm" onclick="stripePay(event)" value="Przejdź do płatności" />
 								</div>
 								<br />
 							</div>
 							<div class="col-md-4">
-								<h4 align="center">Order Details</h4>
+								<h4 align="center">Dane zamówienia</h4>
 								<?php
 								echo $order_details;
 								?>

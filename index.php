@@ -308,6 +308,6 @@ $(document).ready(function(){
 });
 </script>
 <script src="script.js"></script> 
-<footer>ChujXXX</footer>
+<footer>Kraina Grzybów</footer>
 </body>
 </html>
