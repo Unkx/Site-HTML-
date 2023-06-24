@@ -260,8 +260,8 @@ display: flex;
 
 
 #cart-popover {
-  margin-bottom: -200px;
-  margin-left: 945px;
+  margin-bottom: -200%;
+  margin-left: 45%;
   text-decoration: none;
   font-size: 50px;
   display: flex;
@@ -315,64 +315,86 @@ display: flex;
 .container2{
   display: grid;
   grid-template-columns: repeat(3, 2fr);
-  grid-gap: 5px;
-  padding-left:70px;
+  grid-gap: 3%;
+  padding-left:1%;
   padding-top:30px;
+  padding-bottom: 10%;
 }
 .przedmioty{
-
   border-radius: 25px;
-  background: #ffffff;
+  background: rgb(172, 53, 53);
+  color:black;
   padding: 15px;
-  padding-right:20px;
-  margin-left: 4px;
-  width: 450px;
-  height: 600px;
+  padding-left: 20%;
+  padding-right:20%;
+  margin-right: 7%;
+  width: 55%;
+  height: 85%;
   text-align: center;
   font-family: 'Press Start 2P';
-  font-size: 20px;
-  margin-top: 60px;
+  font-size: 30px;
+  margin-top: 10%;
+  box-shadow: 0px 0px 30px rgb(0, 0, 0);
+  text-shadow:2px 2px 1px #590352, 4px 3px 6px #0191f8;
   
 }
 
 .dark {
   border-radius: 25px;
   background: #000;
-  color:white;
+  color:rgb(255, 255, 255);
   padding: 15px;
-  padding-right:20px;
-  margin-left: 4px;
-  width: 450px;
-  height: 600px;
+  padding-left: 20%;
+  padding-right:20%;
+  margin-right: 7%;
+  width: 55%;
+  height: 85%;
   text-align: center;
   font-family: 'Press Start 2P';
-  font-size: 20px;
-  margin-top: 60px;
-  
+  font-size: 30px;
+  margin-top: 10%;
+  box-shadow: 0px 0px 30px rgb(255, 255, 255);
+  text-shadow:2px 2px 1px #034b59, 4px 3px 6px #f801a6;
+}
+.imageBB{
+  margin-top: 10%;
+
+  width:85%;
+  padding-bottom:20%;
+}  
+.BB-text{
+  margin-bottom:40%;
+
 }
 .imageDoom{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:85%;
+  padding-top:10%;
+  margin-top: 10%;
+  width:110%;
+}
+.doom-text{
+
+  margin-bottom: 60%;
 }
 .image-gogle{
-  padding-top:100px;
-  width:90%;
+  padding-top: 40%;
+
+  margin-bottom: -25%;
+  width:100%;
+}
+.gogle-text{
+  padding-top: 10%;
 }
 .image-pip{
-  padding-top:70px;
-  width:90%;
+
+  width:100%;
 }
 .image-dead{
-  padding-top:30px;
-  margin-bottom: -90px;
-  width:70%;
+
+  width:85%;
 }
 .image-łazik{
-  padding-top:70px;
-  margin-bottom: -10px;
-  width:90%;
+
+  width:100%;
 }
 
 @media(max-width:900px){
@@ -394,7 +416,7 @@ display: flex;
       font-family: 'Press Start 2P';
       font-size: 13px;
       margin-top: 30px;
-      
+      box-shadow: 20px 2344 px 2px #afa;
   }
   
   .dark{
@@ -411,13 +433,10 @@ display: flex;
     margin-top: 30px;
     
 }
-  .image{
-    width:70%
 
-  }
   .imageBB{
     width:65%;
-    margin-bottom: -5px;
+    margin-bottom: -5%;
   }  
   .imageDoom{
     width:90%;

@@ -96,13 +96,16 @@ session_start();
 				<div class="dark">
 					<img src="images/BB-Pod.png" class="imageBB">
 					<br>
+					
+					<div class="BB-text">
 					<h4 class="text-info">BB-Pod</h4>
 					<h4 class="text-danger">$ 230.00</h4>
 					<input type="text" name="quantity" id="quantity1" class="form-control" value="1">
-						
+					
 					<input type="hidden" name="hidden_name" id="name1" value="BB-Pod">
 					<input type="hidden" name="hidden_price" id="price1" value="230.00">
 					<input type="button" name="add_to_cart" id="1" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+					</div>
 				</div>
 
 			
@@ -110,13 +113,17 @@ session_start();
 				<div class="przedmioty">
 					<img src="images/doom-helmet.jpg" class="imageDoom">
 					<br>
+					<br>
+					<br>
+					<div class = "doom-text">
 					<h4 class="text-info">Doom Helmet</h4>
 					<h4 class="text-danger">$ 300.00</h4>
 					<input type="text" name="quantity" id="quantity2" class="form-control" value="1">
-						
+					
 					<input type="hidden" name="hidden_name" id="name2" value="Doom Helmet">
 					<input type="hidden" name="hidden_price" id="price2" value="300.00">
 					<input type="button" name="add_to_cart" id="2" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+					</div>
 				</div>
 
 				<div class="dark">
@@ -126,6 +133,7 @@ session_start();
 					<br>
 					<br>
 					<br>
+					<div class="gogle-text">
 					<h4 class="text-info">Night vision goggles</h4>
 					<h4 class="text-danger">$ 160.00</h4>
 					<input type="text" name="quantity" id="quantity3" class="form-control" value="1">
@@ -133,6 +141,7 @@ session_start();
 					<input type="hidden" name="hidden_name" id="name3" value="Goggles">
 					<input type="hidden" name="hidden_price" id="price3" value="160.00">
 					<input type="button" name="add_to_cart" id="3" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+					</div>
 				</div>
 
 				<div class="przedmioty">
@@ -192,6 +201,8 @@ session_start();
 			
 				<br />
 				<br />
+				<br />
+				<br/>
 			</div>
 		</div>
 		
