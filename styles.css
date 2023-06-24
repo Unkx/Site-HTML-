@@ -260,8 +260,8 @@ display: flex;
 
 
 #cart-popover {
-  margin-bottom: -200px;
-  margin-left: 945px;
+  margin-bottom: -200%;
+  margin-left: 45%;
   text-decoration: none;
   font-size: 50px;
   display: flex;
@@ -322,61 +322,100 @@ display: flex;
 }
 .przedmioty{
   border-radius: 25px;
+<<<<<<< HEAD
   background: white;
+=======
+  background: rgb(172, 53, 53);
+>>>>>>> 3ffd323afd0fe6393cee43deac7f35c52a964cb4
   color:black;
   padding: 15px;
   padding-left: 20%;
   padding-right:20%;
   margin-right: 7%;
+<<<<<<< HEAD
   width: 60%;
   height: 90%;
+=======
+  width: 55%;
+  height: 85%;
+>>>>>>> 3ffd323afd0fe6393cee43deac7f35c52a964cb4
   text-align: center;
   font-family: 'Press Start 2P';
-  font-size: 20px;
-  margin-top: 60px;
+  font-size: 30px;
+  margin-top: 10%;
+  box-shadow: 0px 0px 30px rgb(0, 0, 0);
+  text-shadow:2px 2px 1px #590352, 4px 3px 6px #0191f8;
   
 }
 
 .dark {
   border-radius: 25px;
   background: #000;
-  color:white;
+  color:rgb(255, 255, 255);
   padding: 15px;
   padding-left: 20%;
   padding-right:20%;
   margin-right: 7%;
+<<<<<<< HEAD
   width: 60%;
   height: 90%;
+=======
+  width: 55%;
+  height: 85%;
+>>>>>>> 3ffd323afd0fe6393cee43deac7f35c52a964cb4
   text-align: center;
   font-family: 'Press Start 2P';
-  font-size: 20px;
-  margin-top: 60px;
-  
+  font-size: 30px;
+  margin-top: 10%;
+  box-shadow: 0px 0px 30px rgb(255, 255, 255);
+  text-shadow:2px 2px 1px #034b59, 4px 3px 6px #f801a6;
+}
+.imageBB{
+  margin-top: 10%;
+
+  width:85%;
+  padding-bottom:20%;
+}  
+.BB-text{
+  margin-bottom:40%;
+
 }
 .imageDoom{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:85%;
+  padding-top:10%;
+  margin-top: 10%;
+  width:110%;
+}
+.doom-text{
+
+  margin-bottom: 60%;
 }
 .image-gogle{
-  padding-top:100px;
-  width:90%;
+  padding-top: 40%;
+
+  margin-bottom: -25%;
+  width:100%;
+}
+.gogle-text{
+  padding-top: 10%;
 }
 .image-pip{
-  padding-top:70px;
-  width:90%;
+
+  width:100%;
 }
 .image-dead{
+<<<<<<< HEAD
   padding-top:30px;
   margin-bottom: -90px;
   box-shadow: 2px 5px 5px white;
   width:100%;
+=======
+
+  width:85%;
+>>>>>>> 3ffd323afd0fe6393cee43deac7f35c52a964cb4
 }
 .image-łazik{
-  padding-top:70px;
-  margin-bottom: -10px;
-  width:90%;
+
+  width:100%;
 }
 
 @media(max-width:900px){
