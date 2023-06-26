@@ -57,6 +57,7 @@ zdjęcia logo :
 Galeria :
 - https://uk.kojimaproductions-store.com/collections/death-stranding/products/death-stranding-bbpod
 Czcionki :
+- https://fonts.google.com/specimen/Belanosima
 - https://www.dafont.com/super-mario-256.font
 - https://www.dafont.com/arcade-ya.font
 Gify logo :
@@ -76,3 +77,8 @@ Przedmioty w koszyku :
 - https://www.engadget.com/2015-11-09-fallout-4-pip-boy-hands-on.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAADRDcdwUJ48DkobKYi88hBSEykWP0un9wKLlVpmgRhdSAVr2VOfu5m908-A1s3KWfCw1e3EafTD5_lAt5gZS2xZZkFaPwXY6PNcCbguCvUapNK6QJllIw6K1PakKTKtwU-lEYz8tOuo8ujbkyvlamaGI6avKPm34g1cwLjf4osTn - pip boy
 - https://twitter.com/Cromwelp/status/1611287154214449153 - Dead Island 
 - https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.starboardgames.com.au%2Fproduct%2Fpdp-mass-effect-andromeda-collectors-edition-diecast-nomad-nd1-no-remote%2F&psig=AOvVaw2YusP7LHZ12xTODgRi3h89&ust=1687473954494000&source=images&cd=vfe&ved=0CBMQjhxqFwoTCJjJ3b241f8CFQAAAAAdAAAAABAE mass effect
+
+Przyciski użyte w projekcie :
+- https://getcssscan.com/css-buttons-examples (button50 , button54)
+Dodawanie mapy Google :
+- https://www.youtube.com/watch?v=KIC0OK9nKXY&t=163s
