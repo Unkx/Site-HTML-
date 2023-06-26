@@ -25,12 +25,11 @@ session_start();
                           </a>
                         <div class="navbar-links">
                             <ul>
-                                <img class="gamepad" src="zdj/gameboy-projekt.png" alt="gameboy">
-                                <li><a href="Strona Główna.html">Strona Glowna</a></li>
-                                <li><a href="example/index.php">O nas</a></li>
-                                <li><a href="#">Wyszukiwarka</a></li>
-                                <li><a href="historia.html">O historii gier</a></li>
-                                <li><a href="memory.html">Gry</a></li>
+							<img class="gamepad" src="zdj/gameboy-projekt.png" alt="gameboy">
+                        <li><a href="Strona Główna.html">Strona Glowna</a></li>
+                        <li><a href="index.php">Produkty</a></li>
+                        <li><a href="historia.html">O historii gier</a></li>
+                        <li><a href="memory.html">Gry</a></li>
                             </ul>
 
                         </div>
@@ -61,7 +60,8 @@ session_start();
 
 					<div class="koszyk">
 
-								<button id="cart-popover" type="button"data-placement="bottom" title="Koszyk">
+								<button id="cart-popover" type="button"data-placement="bottom" >
+		
 								<i class="fa fa-cart-plus"></i>
 								<span class="total_price" >$ 0.00</span>
 								</button>
@@ -69,13 +69,14 @@ session_start();
 				</div>
 
 			<div id="popover_content_wrapper" class="popover" style="display: none">
-				<span id="cart_details"></span>
-				<div text-align="right">
+				<h1 style="text-align:center;">Koszyk</h1>
+				<span id="cart_details" style="text-align:center;"></span>
+				<div>
 					<a href="order_process.php" class="btn btn-primary" id="check_out_cart">
-						<span></span> Przejdź do koszyka
+						<span style="text-align:center;"></span></span> Przejdź do koszyka
 					</a>
-					<a href="#" class="btn btn-default" id="clear_cart">
-						<span class="glyphicon glyphicon-trash"></span> Wyczyść
+					<a href="#" class="btn btn-default" id="clear_cart" style="text-align:center;">
+						<span class="glyphicon glyphicon-trash" style="text-align:center;"></span> Wyczyść
 					</a>
 				</div>
 			</div>
@@ -100,7 +101,7 @@ session_start();
 					<div class="BB-text">
 					<h4 class="text-info">BB-Pod</h4>
 					<h4 class="text-danger">$ 230.00</h4>
-					<input type="text" name="quantity" id="quantity1" class="form-control" value="1">
+					<input type="text" name="quantity" id="quantity1" class="form-control2" value="1">
 					
 					<input type="hidden" name="hidden_name" id="name1" value="BB-Pod">
 					<input type="hidden" name="hidden_price" id="price1" value="230.00">
@@ -118,7 +119,7 @@ session_start();
 					<div class = "doom-text">
 					<h4 class="text-info">Doom Helmet</h4>
 					<h4 class="text-danger">$ 300.00</h4>
-					<input type="text" name="quantity" id="quantity2" class="form-control" value="1">
+					<input type="text" name="quantity" id="quantity2" class="form-control2" value="1">
 					
 					<input type="hidden" name="hidden_name" id="name2" value="Doom Helmet">
 					<input type="hidden" name="hidden_price" id="price2" value="300.00">
@@ -134,9 +135,9 @@ session_start();
 					<br>
 					<br>
 					<div class="gogle-text">
-					<h4 class="text-info">Night vision goggles</h4>
+					<h4 class="text-info" style="padding-right:35%;">Night vision goggles</h4>
 					<h4 class="text-danger">$ 160.00</h4>
-					<input type="text" name="quantity" id="quantity3" class="form-control" value="1">
+					<input type="text" name="quantity" id="quantity3" class="form-control2" value="1">
 						
 					<input type="hidden" name="hidden_name" id="name3" value="Goggles">
 					<input type="hidden" name="hidden_price" id="price3" value="160.00">
@@ -151,13 +152,15 @@ session_start();
 					<br>
 					<br>
 					<br>
+					<div class="pip-text">
 					<h4 class="text-info">Pip Boy</h4>
 					<h4 class="text-danger">$ 120.00</h4>
-					<input type="text" name="quantity" id="quantity4" class="form-control" value="1">
+					<input type="text" name="quantity" id="quantity4" class="form-control2" value="1">
 						
 					<input type="hidden" name="hidden_name" id="name4" value="Pip Boy">
 					<input type="hidden" name="hidden_price" id="price4" value="120.00">
 					<input type="button" name="add_to_cart" id="4" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+					</div>
 				</div> 
 
 				<div class="dark">
@@ -167,13 +170,15 @@ session_start();
 					<br>
 					<br>
 					<br>
-					<h4 class="text-info">Dead Island Collector's</h4>
+					<div class="dead-text">
+					<h4 class="text-info" style="padding-right:35%;">Dead <br> Island Figure</h4>
 					<h4 class="text-danger">$ 90.00</h4>
-					<input type="text" name="quantity" id="quantity5" class="form-control" value="1">
+					<input type="text" name="quantity" id="quantity5" class="form-control2" value="1">
 						
 					<input type="hidden" name="hidden_name" id="name5" value="Dead Island Collector's">
 					<input type="hidden" name="hidden_price" id="price5" value="90.00">
-					<input type="button" name="add_to_cart" id="5" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+					<input type="button" name="add_to_cart" id="5" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+					</div>
 				</div>
 				<div class="przedmioty">
 					<img src="images/mass-effect.jpg" class="image-łazik">
@@ -182,13 +187,15 @@ session_start();
 					<br>
 					<br>
 					<br>
+					<div class="nomad-text">
 					<h4 class="text-info">Nomad ND1</h4>
 					<h4 class="text-danger">$ 190.00</h4>
-					<input type="text" name="quantity" id="quantity6" class="form-control" value="1">
+					<input type="text" name="quantity" id="quantity6" class="form-control2" value="1">
 						
 					<input type="hidden" name="hidden_name" id="name6" value="Nomad ND1">
 					<input type="hidden" name="hidden_price" id="price6" value="190.00">
-					<input type="button" name="add_to_cart" id="6" style="margin-top:5px;" class="btn btn-success form-control add_to_cart" value="Add to Cart">
+					<input type="button" name="add_to_cart" id="6"class="btn btn-success form-control add_to_cart" value="Add to Cart">
+					</div>
 				</div> 
 				
 			</div>
@@ -199,10 +206,10 @@ session_start();
 			
 
 			
-				<br />
-				<br />
-				<br />
-				<br/>
+				<br>
+				<br>
+				<br>
+				<br>
 			</div>
 		</div>
 		
@@ -319,6 +326,6 @@ $(document).ready(function(){
 });
 </script>
 <script src="script.js"></script> 
-<footer>Kraina Grzybów</footer>
+<footer>Michał Tiedemann</footer>
 </body>
 </html>
