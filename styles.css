@@ -561,14 +561,31 @@ display: flex;
 }
 .przedmioty{
   border-radius: 25px;
+<<<<<<< HEAD
   background: rgb(255, 255, 255);
+=======
+<<<<<<< HEAD
+  background: rgb(255, 255, 255);
+=======
+<<<<<<< HEAD
+  background: white;
+=======
+  background: rgb(172, 53, 53);
+>>>>>>> 3ffd323afd0fe6393cee43deac7f35c52a964cb4
+>>>>>>> 62514384b6701132b90448e40bcf2dd0d764939d
+>>>>>>> 53d212575a76b8cebfa5b6a67a23bec3e2b8f9c0
   color:black;
   padding: 15px;
   padding-left: 20%;
   padding-right:20%;
   margin-right: 7%;
+<<<<<<< HEAD
+  width: 60%;
+  height: 90%;
+=======
   width: 55%;
   height: 85%;
+>>>>>>> 3ffd323afd0fe6393cee43deac7f35c52a964cb4
   text-align: center;
   font-family: 'Press Start 2P';
   font-size: 30px;
@@ -586,8 +603,13 @@ display: flex;
   padding-left: 20%;
   padding-right:20%;
   margin-right: 7%;
+<<<<<<< HEAD
+  width: 60%;
+  height: 90%;
+=======
   width: 55%;
   height: 85%;
+>>>>>>> 3ffd323afd0fe6393cee43deac7f35c52a964cb4
   text-align: center;
   font-family: 'Press Start 2P';
   font-size: 30px;
@@ -631,9 +653,25 @@ display: flex;
   padding-bottom:55%;
 }
 .image-dead{
+<<<<<<< HEAD
   padding-top:10%;
   margin-bottom:-21%;
+=======
+<<<<<<< HEAD
+  padding-top:10%;
+  margin-bottom:-21%;
+=======
+<<<<<<< HEAD
+  padding-top:30px;
+  margin-bottom: -90px;
+  box-shadow: 2px 5px 5px white;
+  width:100%;
+=======
+
+>>>>>>> 62514384b6701132b90448e40bcf2dd0d764939d
+>>>>>>> 53d212575a76b8cebfa5b6a67a23bec3e2b8f9c0
   width:85%;
+>>>>>>> 3ffd323afd0fe6393cee43deac7f35c52a964cb4
 }
 .image-łazik{
   padding-top:50%;
