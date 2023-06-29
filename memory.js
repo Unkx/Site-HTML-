@@ -57,15 +57,12 @@ if (window.matchMedia("(max-width: 900px)").matches) {
   
   function revealcard(nr)
   {
-      //alert(nr);
   
       var opacityValue = $('#c'+nr).css('opacity');
       if(opacityValue != 0 && lock == false)
       {
           lock = true;
       }
-  
-      //alert('Opacity' + opacityValue);
   
       var obraz = "url(img/" + cards[nr] + ")";
   
@@ -109,13 +106,18 @@ if (window.matchMedia("(max-width: 900px)").matches) {
   
       pairsLeft--;
   
-      if(pairsLeft == 0)
-      {
-          $('.board').html('<h1>You win!<br>Done in' +turnCounter+ 'turns</h1>');
+      if (pairsLeft == 0) {
+        $('.board').html('<h1>Wygraleś !<br>Wykonano w ' +turnCounter+ ' turach</h1>').css({
+          'font-family': 'Cantora One, sans-serif',
+          'color': 'white',
+          'font-size': '300%',
+          'text-shadow': '4px 3px 4px #44f',
+          'padding-top': '5%',
+          'text-align': 'center'
+        });
       }
       lock = false;
-  
-  }
+    }
   function restore2Cards(nr1,nr2)
   {
       $('#c'+nr1).css('background-image', 'url(img/karta.png)');
@@ -128,5 +130,3 @@ if (window.matchMedia("(max-width: 900px)").matches) {
   
       lock = false;
   }
-  //wejdź na stronę jQuery i pobierz  wersję skompresowaną bez znaków białych i 
-  //zainstaluj w folderze z naszymi plikami.
