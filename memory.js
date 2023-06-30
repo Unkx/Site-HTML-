@@ -117,6 +117,7 @@ if (window.matchMedia("(max-width: 900px)").matches) {
           'padding-top': '5%',
           'text-align': 'center'
         });
+        
       }
       lock = false;
     }
