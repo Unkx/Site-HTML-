@@ -13,10 +13,12 @@ window.addEventListener('scroll', function() {
   
 /*koniec części wspólnej*/
 
-var cards = ["pong-memory.png","doom-memory.png","pong-memory.png","the-witcher-memory.png","the-legend-of-zelda-memory.png","thps2-memory.png","Contra-memory.png","doom-memory.png","the-witcher-memory.png","the-legend-of-zelda-memory.png","thps2-memory.png","Contra-memory.png"];
+var cards = ["pong-memory.png","doom-memory.png","pong-memory.png","the-witcher-memory.png","the-legend-of-zelda-memory.png",
+"thps2-memory.png","Contra-memory.png","doom-memory.png","the-witcher-memory.png","the-legend-of-zelda-memory.png","thps2-memory.png","Contra-memory.png"];
 
 if (window.matchMedia("(max-width: 900px)").matches) {
-    cards = ["pong-memory-small.png","doom-memory-small.png","pong-memory-small.png","the-witcher-memory-small.png","the-legend-of-zelda-memory-small.png","thps2-memory-small.png","Contra-memory-small.png","doom-memory-small.png","the-witcher-memory-small.png","the-legend-of-zelda-memory-small.png","thps2-memory-small.png","Contra-memory-small.png"];
+    cards = ["pong-memory-small.png","doom-memory-small.png","pong-memory-small.png","the-witcher-memory-small.png","the-legend-of-zelda-memory-small.png",
+    "thps2-memory-small.png","Contra-memory-small.png","doom-memory-small.png","the-witcher-memory-small.png","the-legend-of-zelda-memory-small.png","thps2-memory-small.png","Contra-memory-small.png"];
   }
   var c0 = document.getElementById('c0');
   var c1= document.getElementById('c1');

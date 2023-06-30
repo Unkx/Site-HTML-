@@ -82,3 +82,5 @@ Przyciski użyte w projekcie :
 - https://getcssscan.com/css-buttons-examples (button50 , button54)
 Dodawanie mapy Google :
 - https://www.youtube.com/watch?v=KIC0OK9nKXY&t=163s
+Favicon :
+- https://icon-library.com/icon/xbox-controller-icon-11.html
