@@ -29,7 +29,7 @@ session_start();
                         <li><a href="Strona Główna.html">Strona Glowna</a></li>
                         <li><a href="index.php">Produkty</a></li>
                         <li><a href="historia.html">O historii gier</a></li>
-                        <li><a href="memory.html">Gry</a></li>
+                        <li><a href="memory.html">Memory</a></li>
                             </ul>
 
                         </div>
@@ -326,6 +326,6 @@ $(document).ready(function(){
 });
 </script>
 <script src="script.js"></script> 
-<footer>Michał Tiedemann</footer>
+<footer>Collector's shop ® 2024</footer>
 </body>
 </html>
